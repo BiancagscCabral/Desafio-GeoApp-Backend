@@ -12,7 +12,7 @@ app.use(express.json({ limit: '50mb' }));
 
 // --- CONEXÃO COM O MONGODB ATLAS ---
 // ATENÇÃO: Substitui <password> pela tua senha real do Atlas e o nome do banco (ex: sisManutencaoDB)
-const MONGO_URI = "mongodb+srv://SEU_USUARIO:SUA_SENHA@cluster.mongodb.net/sisManutencaoDB?retryWrites=true&w=majority";
+const MONGO_URI = "mongodb+srv://biancagsccabral_db_user:RxTKkrZ69XzEHGlT@cluster0.4ar8aan.mongodb.net/sisManutencaoDB?retryWrites=true&w=majority&appName=Cluster0";
 
 mongoose.connect(MONGO_URI)
   .then(() => console.log('🔥 Conectado ao MongoDB Atlas (SisManutenção)!'))
